@@ -178,16 +178,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl md:text-2xl text-gray-400 mb-4"
             >
-              De la foto al reporte automático en segundos
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.45 }}
-              className="text-base md:text-lg text-[#79e5f2] mb-12"
-            >
-              🎉 Primer mes completamente gratis
+              De la foto al reporte automático
             </motion.p>
 
             {/* CTA Button */}
