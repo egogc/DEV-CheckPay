@@ -9,17 +9,17 @@ function PhoneIllustration() {
       <motion.div
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-        className="relative w-[280px] h-[560px] bg-[#13131a] border-[12px] border-gray-900 rounded-[3rem] shadow-2xl shadow-[#7863fe]/20 overflow-hidden"
+        className="relative w-[280px] h-[560px] bg-[#13131a] border-[12px] border-[#7863fe] rounded-[3rem] shadow-2xl shadow-[#7863fe]/20 overflow-hidden"
       >
         {/* Phone notch */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-900 rounded-b-2xl z-10" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-700 rounded-b-2xl z-10" />
 
         {/* Screen content */}
         <div className="h-full bg-gradient-to-b from-[#1a1a24] to-[#13131a] p-6 pt-10">
           {/* Header */}
           <div className="text-center mb-6">
             <p className="text-gray-400 text-sm mb-1">Comprobante de pago</p>
-            <h3 className="text-white text-xl font-bold">Nequi</h3>
+            <img src="/logos/nequi.svg" alt="Nequi" className="h-9 w-auto mx-auto" />
           </div>
 
           {/* Payment receipt card */}
@@ -156,7 +156,7 @@ export function Hero() {
               transition={{ duration: 0.6 }}
               className="mb-8 flex justify-center lg:justify-start"
             >
-              <img src={logoSvg} alt="CheckPay" className="h-16 md:h-20" />
+              <img src={logoSvg} alt="CheckPay" className="h-[77px] md:h-24" />
             </motion.div>
 
             {/* Main heading */}
@@ -164,7 +164,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-none"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               Verifica y organiza <br />
